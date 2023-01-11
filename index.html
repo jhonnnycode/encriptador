@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <script src="java.js"></script>
+</head>
+<body>
+    
+    <header>
+        <div>
+
+           <h1><img src="imgs/Logo.png" alt="logo alura"></h1> 
+
+        </div>
+
+        <div>
+            <aside id="recuadroblanco">
+                
+                <img src="imgs/Muñeco.png" alt="imagen no encontrado" class="imagen-no-found" id="imagen-no-found">
+                <h2 id="ningunmensaje">Ningun mensaje fue encontrado</h2>
+                <textarea id="textoder" class="texto" cols="30" rows="10">ingrese texto que desea encriptar o desencriptar</textarea>
+                <button class="copiar" id="copiarr" onclick="copiar()">COPIAR</button>        
+            </aside>
+
+        </div>
+    </header>
+    <main>
+        <div class="caja-texto">
+    
+            <textarea id="textoprincipal" class="texto-principal" placeholder="Ingrese el texto" onkeypress="return soloLetras(event)"></textarea> 
+            
+        </div>
+        <div >
+            <p class="atencion">Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="botones">
+            <button id="copiar" class="boton-encriptar" onclick="encriptar()">ENCRIPTAR</button>
+            <button class="boton-desencriptar" onclick="desencriptar()">DESENCRIPTAR</button>
+
+        </div>
+    </main>
+    
+</body>
+</html>

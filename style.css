@@ -1,0 +1,334 @@
+body{
+    background: url(imgs/white-wall.jpg); 
+    
+}
+
+header{
+
+    
+    padding: 5px 5px;
+}
+
+h1{
+    position: static;
+    left: 36.67%;
+    right: 37.43%;
+    top: 0%;
+    bottom: 0%;
+
+}
+
+aside{
+    
+    background: #FFFFFF;
+    float: right;
+    /* margin: auto 20% 0 0; ojo con los valores para la vista en cel*/
+    width: 30%;
+    height: 60%;
+    box-shadow: 0px 24px 32px -8px rgb(0, 0, 0);
+    border-radius: 32px;
+    margin-top: 3%;
+    
+    
+    
+}
+
+.imagen-no-found{
+    margin: 10% auto 0 10% ;
+    width: 80%;
+    height: auto;
+}
+
+h2{
+    
+    text-align: center;
+    font-weight: bold;
+}
+
+.texto{
+    padding: 10%;
+    margin-left: 4%;
+    width: 70%;
+    height: auto;
+    border: none;
+    background: none;
+    resize: none;
+    outline: none;
+    color:#0A3871;
+    font-family: 'Ubuntu', sans-serif;  
+}
+
+.copiar{
+
+    margin: 0 40% 5% 40%;
+    height: 60%;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0A3871;
+    background: none;
+    border-radius: 24px;
+    border-color: #0A3871;
+    cursor: pointer;
+    display: none; 
+
+
+
+}
+
+
+
+.caja-texto{
+
+       
+    width: 70%;
+    height: 400px;
+    padding: 20px;
+}
+
+.texto-principal{
+    
+    margin-left: 5%;
+    margin-top: 3%;
+    width: 70%;
+    height: 70%;
+    border: none;
+    background: none;
+    resize: none;
+    outline: none;
+    color: #1e569b;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    
+    
+}
+
+/*para cambiar el estilo del placeholder es necesario poner estos 3 codigos dado que cada navegador necesita un selector diferente*/
+.texto-principal::-webkit-input-placeholder {
+    color: #0A3871;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    }
+.texto-principal::-moz-placeholder {
+    color: #0A3871;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    }
+.texto-principal:-ms-input-placeholder {
+    color: #0A3871;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    }
+
+
+.atencion{
+
+    margin-left: 5%;
+    color: #0A3871;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+.atencion:before{
+
+    content: "\2757";
+}
+
+.botones{
+    padding: 20px;
+    display: flex;
+}
+.boton-encriptar{
+    
+    width: 30%;
+    height: 60%;
+    padding: 20px;
+    margin-left: 5%;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: #0A3871;
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+
+}
+.boton-desencriptar{
+    
+    width: 30%;
+    height: 60%;
+    padding: 20px;
+    margin-left: 2%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0A3871;
+    background: #D8DFE8;
+    border-radius: 24px;
+    border-bottom: #0A3871;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:380px){
+
+    
+.botones{
+     
+     display:flex;
+     flex-wrap: wrap;
+
+}
+.boton-encriptar{
+    
+    width: 60%;
+    height: 60%;
+    margin: 5px auto;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: #0A3871;
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+
+}
+.boton-desencriptar{
+    
+    width: 60%;
+    height: 60%;
+    margin: 10px auto;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0A3871;
+    background: #D8DFE8;
+    border-radius: 24px;
+    border-bottom: #0A3871;
+    border: none;
+    cursor: pointer;
+}
+
+aside{
+    
+    background: #FFFFFF;
+    position: absolute;
+    margin: 650px 5% 5% 8%; 
+    width: 80%;
+    height: 30%;
+    box-shadow: 0px 24px 32px -8px rgb(0, 0, 0);
+    border-radius: 32px
+      
+}
+
+.imagen-no-found{
+    display: none;
+}
+.copiar{
+
+    width: 60%;
+    height: 30%;
+    margin: -80px 0px 0px 60px;;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0A3871;
+    background: none;
+    border-radius: 24px;
+    border-color: #0A3871;
+    cursor: pointer;
+    display: none; 
+
+}
+h2{
+    
+    text-align: center;
+    font-weight: bold;
+    padding: 10%;
+}
+
+}
+
+/* para tablet */
+
+@media screen and (min-width:768px) and (max-width:1023px){
+
+    
+    /* .botones{
+         
+         display:flex;
+         flex-wrap: wrap;
+    
+    }
+    .boton-encriptar{
+        
+        width: 60%;
+        height: 60%;
+        margin: 5px auto;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        background: #0A3871;
+        border-radius: 24px;
+        border: none;
+        cursor: pointer;
+    
+    }
+    .boton-desencriptar{
+        
+        width: 60%;
+        height: 60%;
+        margin: 10px auto;
+        padding: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #0A3871;
+        background: #D8DFE8;
+        border-radius: 24px;
+        border-bottom: #0A3871;
+        border: none;
+        cursor: pointer;
+    } */
+    
+    aside{
+        
+        background: #FFFFFF;
+        position: absolute;
+        margin: 650px 5% 5% 8%; 
+        width: 80%;
+        height: 30%;
+        box-shadow: 0px 24px 32px -8px rgb(0, 0, 0);
+        border-radius: 32px
+          
+    }
+    
+    .imagen-no-found{
+        display: none;
+    }
+    .copiar{
+    
+        width: 40%;
+        height: 18%;
+        margin: -80px 0px 0px 190px;;
+        padding: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #0A3871;
+        background: none;
+        border-radius: 24px;
+        border-color: #0A3871;
+        cursor: pointer;
+        display: none; 
+    
+    }
+    h2{
+        
+        text-align: center;
+        font-weight: bold;
+        padding: 10%;
+    }
+    
+    }
